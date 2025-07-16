@@ -1,0 +1,165 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header {
+    background: linear-gradient(135deg, #0078d4, #106ebe);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.header p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-section, .action-section, .output-section {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3, .action-section h3, .output-section h3 {
+    margin: 0 0 10px 0;
+    color: #0078d4;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#userInfo p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.action-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action-button {
+    background: #0078d4;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.action-button:hover {
+    background: #106ebe;
+}
+
+.action-button:active {
+    background: #005a9e;
+}
+
+.action-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.output-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    min-height: 80px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 0.9em;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.footer {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+#status {
+    font-weight: 600;
+    color: #0078d4;
+}
+
+.success {
+    color: #107c10;
+    font-weight: 600;
+}
+
+.error {
+    color: #d13438;
+    font-weight: 600;
+}
+
+.info {
+    color: #0078d4;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 320px) {
+    .container {
+        padding: 5px;
+    }
+    
+    .header, .info-section, .action-section, .output-section {
+        padding: 10px;
+    }
+    
+    .header h1 {
+        font-size: 1.2em;
+    }
+    
+    .action-button {
+        padding: 10px 12px;
+        font-size: 0.8em;
+    }
+} 

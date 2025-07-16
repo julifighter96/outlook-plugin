@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Outlook Plugin</title>
+    <link rel="stylesheet" href="taskpane.css">
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Test Plugin</h1>
+            <p>Ein einfaches Outlook Online Plugin</p>
+        </div>
+        
+        <div class="content">
+            <div class="info-section">
+                <h3>Plugin-Informationen</h3>
+                <div id="userInfo">
+                    <p><strong>Benutzer:</strong> <span id="userName">Laden...</span></p>
+                    <p><strong>E-Mail:</strong> <span id="userEmail">Laden...</span></p>
+                </div>
+            </div>
+            
+            <div class="action-section">
+                <h3>Aktionen</h3>
+                <button id="insertTextButton" class="action-button">
+                    📝 Text einfügen
+                </button>
+                <button id="getEmailInfoButton" class="action-button">
+                    📧 E-Mail-Info anzeigen
+                </button>
+                <button id="showMessageButton" class="action-button">
+                    💬 Nachricht anzeigen
+                </button>
+            </div>
+            
+            <div class="output-section">
+                <h3>Ausgabe</h3>
+                <div id="output" class="output-box">
+                    Hier werden die Ergebnisse angezeigt...
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Status: <span id="status">Bereit</span></p>
+        </div>
+    </div>
+    
+    <script src="taskpane.js"></script>
+</body>
+</html> 

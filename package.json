@@ -1,0 +1,36 @@
+{
+  "name": "simple-outlook-plugin",
+  "version": "1.0.0",
+  "description": "Ein einfaches Outlook Online Plugin zu Testzwecken",
+  "main": "standalone-plugin.html",
+  "scripts": {
+    "dev": "python -m http.server 8080",
+    "build": "echo 'Static files ready for deployment'",
+    "start": "python -m http.server 8080",
+    "serve": "python -m http.server 8080",
+    "serve-node": "npx http-server -p 8080 -c-1",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "outlook",
+    "plugin",
+    "office-addin",
+    "outlook-addin",
+    "test",
+    "vercel"
+  ],
+  "author": "Test Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "vercel": "^32.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homepage": "https://github.com/user/simple-outlook-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/simple-outlook-plugin.git"
+  }
+} 
